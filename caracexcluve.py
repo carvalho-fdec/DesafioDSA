@@ -1,4 +1,4 @@
-'''
+"""
 Implementar um algoritmo para determinar se uma string possui todos os caracteres exclusivos.
 
 Premissas
@@ -12,7 +12,7 @@ None -> False
 '' -> True
 'foo' -> False
 'bar' -> True
-'''
+"""
 
 
 def caracexclusiv (palavra):
@@ -25,12 +25,9 @@ def caracexclusiv (palavra):
 
     for c1 in range(0, tam):
         for c2 in range(0, tam):
-            #print(f'palavra c1 {palavra[c1]}')
-            #print(f'palavra c2 {palavra[c2]}\n\n')
             if palavra[c1] == palavra[c2]:
                 contadoraux += 1
 
-    #print(f'contador {contadoraux}')
     if contadoraux/tam == 1:
         return True
     else:
